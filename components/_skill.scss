@@ -1,0 +1,37 @@
+.skill__list {
+  display: grid;
+  row-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.skill__title {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}
+.skill__years {
+  display: inline-block;
+  font-size: var(--font-size-20);
+  margin-top: 1rem;
+}
+.skills {
+  position: relative;
+  justify-content: center;
+  display: grid;
+  padding: 11rem 0;
+}
+.skills::after {
+  content: "";
+  background-color: var(--color-grey);
+  position: absolute;
+  justify-self: center;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+}
+.skill__title {
+  user-select: none;
+  transition: var(--transition-timing);
+}
+.skill__title:hover {
+  text-shadow: 0 0 2px var(--color-green);
+}

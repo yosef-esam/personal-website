@@ -1,0 +1,15 @@
+.main__projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.4rem;
+}
+.project-img {
+  max-width: 100%;
+  box-shadow: 0 0 0.2 rgb(0, 0, 0, 0.2);
+}
+.projects__objective {
+  align-self: center;
+}
+.projects__description {
+  line-height: 1.5;
+}
